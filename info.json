@@ -1,0 +1,50 @@
+{
+    "name": "Gravatar",
+    "slug": "gravatar",
+    "version": "0.0.1",
+    "core_version": "0.0.1",
+    "description": "Provide gravatar API images",
+    "authors": [
+        {
+            "name": "Phill Sparks",
+            "email": "me@phills.me.uk"
+        },
+        {
+            "name": "Jefferson Costella",
+        }
+    ],
+    "options": {
+            "handles": "gravatar",
+            "auto": true
+    },
+    "roles" : [
+        {
+            "name":"Access Gravatar Module",
+            "description":"Permit access to the gravatar module.",
+            "slug":"backend_gravatar_settings_get_index",
+            "value":false
+        },
+        {
+            "name":"Change Gravatar Settings",
+            "description":"Permit change settings of the gravatar module.",
+            "slug":"backend_gravatar_settings_put_update",
+            "value":false
+        }
+    ],
+    "required":[
+        {
+            "name": "settings",
+            "version": "0.0.1"
+        }
+    ],
+    "menu": [
+        {
+            "main_menu" : "Modules",
+            "title"     : "Gravatar",
+            "url"       : "gravatar",
+            "class"     : "",
+            "li_class"  : "",
+            "children"  : []
+        }
+    ]
+}
